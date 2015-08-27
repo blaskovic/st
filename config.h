@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char font[] = "Liberation Mono:pixelsize=12:antialias=false:autohint=false";
+static char font[] = "-*-terminus-medium-r-*-*-16-*-*-*-*-*-*-*";
 static int borderpx = 2;
 
 /*
@@ -130,7 +130,8 @@ static Mousekey mshortcuts[] = {
 };
 
 /* Internal keyboard shortcuts. */
-#define MODKEY Mod1Mask
+//#define MODKEY Mod1Mask
+#define MODKEY ControlMask
 
 static Shortcut shortcuts[] = {
 	/* mask                 keysym          function        argument */
